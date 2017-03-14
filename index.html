@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tic Tac Toe Game</title>
+		<link rel="stylesheet" type="text/css" href="./Styles/stylesheet.css">
+		<link rel="icon" href="/Images/Tic-Tac-Toe-Game.ico">
+		<script type="text/javascript" src="jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="Main.js"></script>
+		<script type="text/javascript" src="./Js/tictactoe.js"></script>
+	</head>
+	<body onload="startGame();">
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1>Galaxy</h1>
+				</div>
+				<nav>
+					<ul>
+						<li class="active"><a href="index.html">Tic Tac Toe</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	    <div id="main">
+	    	<div id="message"></div>
+			<div id="insidemain">
+		      <table border="1" align="center">
+		        <tr>
+		          <td id="s1" class="square" onclick="nextMove(this);"></td>
+		          <td id="s2" class="square" onclick="nextMove(this);"></td>
+		          <td id="s3" class="square" onclick="nextMove(this);"></td>
+		        </tr>
+		        <tr>
+		          <td id="s4" class="square" onclick="nextMove(this);"></td>
+		          <td id="s5" class="square" onclick="nextMove(this);"></td>
+		          <td id="s6" class="square" onclick="nextMove(this);"></td>
+		        </tr>
+		        <tr>
+		          <td id="s7" class="square" onclick="nextMove(this);"></td>
+		          <td id="s8" class="square" onclick="nextMove(this);"></td>
+		          <td id="s9" class="square" onclick="nextMove(this);"></td>
+		        </tr>
+		      </table>
+		      <div id="centered">
+		      	<a href="javascript:startGame();">Start over</a>
+		      </div>
+			</div>
+	    </div>
+		<footer>
+			<p>Galaxy, Copyright &copy; 2017</p>
+		</footer>
+	</body>
+</html>

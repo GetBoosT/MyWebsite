@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#f4f4f4;	
+}
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+/* Header */
+header{
+	color:#ffffff;
+	background:#35424a;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+	max-width: 100%
+}
+header a {
+	color:#ffffff; /*changes color of text*/
+	text-decoration: none;
+	text-transform: uppercase; /*Makes all letters uppercase*/
+	font-size:15px;/*Changes font size to 15px*/
+}
+header li {
+	float:left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #branding {
+	float: left;
+}
+header #branding h1 {
+	margin:0;
+}
+header nav {
+	float:right;
+	margin-top: 10px;
+}
+header .active a{
+	color:#ffffff;
+	font-weight:bold;
+	padding: 10px 15px;
+	border-radius: 10px;
+	animation-timing-function: ease;
+	background:#0ebfdd;
+}
+/* SLider */
+#slider {
+	width: 720px;
+	height: 400px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin:0;
+	padding: 0;
+}
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 720px;
+	height: 400px;
+}
+/* Main */
+#main {
+	min-height: 100%;
+	height: auto;
+}
+#message {
+	padding: 10px 20px;
+	font-size: 20pt;
+	text-align: center;
+}
+.square {
+	width: 150px;
+	height: 150px;
+	font-size: 50pt;
+	text-align: center;
+}
+#centered {
+	text-align: center;
+	margin-top: 20px;
+}
+#centered a {
+	padding: 10px 20px;
+	font-size: 16pt;
+	border-radius: 10px;
+	text-decoration: none;
+	background:#0ebfdd;
+	color:#ffffff;
+}
+/* End Main */
+/* Footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	padding:20px;
+	margin-top: 20px;
+	color:#ffffff;
+	background:#35424a;
+	text-align: center;
+	right:0;
+	left:0;
+
+}
+@media(max-height: 768px){
+	footer {
+		position: relative;
+		bottom: 0; 
+	}
+}
